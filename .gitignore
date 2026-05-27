@@ -1,0 +1,11 @@
+venv/
+__pycache__/
+*.pyc
+*.pyd
+*.dll
+*.lib
+*.exe
+*.log
+temp_image.png
+.env
+.streamlit/secrets.toml
