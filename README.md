@@ -145,7 +145,7 @@ Users speak the math question, which is converted into text using speech recogni
 
 # Project Structure
 
-```bash
+
 VisionMath-Agent
 │
 ├── agents
