@@ -8,8 +8,8 @@ AI-powered **VisionMath-Agent Problem Solver** built using a **Multi-Agent Archi
 
 Experience the application here:
 
-**Live Application:**
-https://multimodal-math-mentor-karthik.streamlit.app/
+**Live Application:**  
+https://visionmath-agent-gt6bajmhfinmbhiekmn3nw.streamlit.app/
 
 No installation required — open the link and start solving math problems instantly.
 
@@ -58,31 +58,31 @@ This modular architecture improves:
 
 # Key Features
 
-Multimodal Input Support
+## Multimodal Input Support
 Accepts math problems through text, images, or audio.
 
-OCR Integration
+## OCR Integration
 Extracts mathematical expressions from uploaded images.
 
-Speech-to-Text Processing
+## Speech-to-Text Processing
 Converts spoken math questions into text queries.
 
-Multi-Agent Reasoning Pipeline
+## Multi-Agent Reasoning Pipeline
 Different AI agents collaborate to solve problems.
 
-Retrieval-Augmented Generation (RAG)
+## Retrieval-Augmented Generation (RAG)
 Retrieves relevant mathematical knowledge during reasoning.
 
-Solution Verification
+## Solution Verification
 Ensures generated answers are logically correct.
 
-Step-by-Step Explanations
+## Step-by-Step Explanations
 Helps users understand how the solution is derived.
 
-Memory System
+## Memory System
 Stores previous interactions and solutions.
 
-Interactive Web Interface
+## Interactive Web Interface
 Built with Streamlit for a smooth user experience.
 
 ---
@@ -91,27 +91,27 @@ Built with Streamlit for a smooth user experience.
 
 The application uses a **multi-agent pipeline**, where each agent performs a specialized task.
 
-### Agents
+## Agents
 
-Parser Agent
+### Parser Agent
 Interprets and structures the mathematical problem.
 
-Router Agent
+### Router Agent
 Identifies the type of mathematical problem and selects the solving strategy.
 
-Retriever Agent
+### Retriever Agent
 Fetches relevant knowledge using Retrieval-Augmented Generation.
 
-Solver Agent
+### Solver Agent
 Computes the mathematical solution.
 
-Verifier Agent
+### Verifier Agent
 Checks the correctness of the generated answer.
 
-Explainer Agent
+### Explainer Agent
 Produces step-by-step explanations.
 
-Memory Manager
+### Memory Manager
 Stores past problem-solving interactions.
 
 ---
@@ -120,36 +120,38 @@ Stores past problem-solving interactions.
 
 Users can interact with the system through multiple input formats.
 
-Text Input
+## Text Input
 Users type a math question directly into the interface.
 
-Image Input
+## Image Input
 Users upload an image containing a math problem, and OCR extracts the equation.
 
-Audio Input
+## Audio Input
 Users speak the math question, which is converted into text using speech recognition.
 
 ---
 
 # Technology Stack
 
-Python
-Streamlit
-Large Language Models (LLMs)
-OCR (Optical Character Recognition)
-Speech-to-Text Processing
-Retrieval-Augmented Generation (RAG)
+* Python
+* Streamlit
+* Large Language Models (LLMs)
+* OCR (Optical Character Recognition)
+* Speech-to-Text Processing
+* Retrieval-Augmented Generation (RAG)
+* Multi-Agent Systems
 
 ---
 
 # Project Structure
 
-```
-Multimodal-Math-Mentor
+```bash
+VisionMath-Agent
 │
 ├── agents
 │   ├── parser_agent.py
 │   ├── router_agent.py
+│   ├── retriever_agent.py
 │   ├── solver_agent.py
 │   ├── verifier_agent.py
 │   └── explainer_agent.py
@@ -169,20 +171,17 @@ Multimodal-Math-Mentor
 ├── app.py
 ├── requirements.txt
 └── README.md
-```
-
----
 
 # How the System Works
 
-1. User submits a math problem via text, image, or audio
-2. Parser Agent interprets the problem
-3. Router Agent identifies the mathematical domain
-4. Retriever Agent gathers relevant context
-5. Solver Agent computes the solution
-6. Verifier Agent validates correctness
-7. Explainer Agent generates step-by-step reasoning
-8. Memory Manager stores the interaction
+1. User submits a math problem via text, image, or audio  
+2. Parser Agent interprets and structures the problem  
+3. Router Agent identifies the mathematical domain  
+4. Retriever Agent gathers relevant context  
+5. Solver Agent computes the solution  
+6. Verifier Agent validates correctness  
+7. Explainer Agent generates step-by-step reasoning  
+8. Memory Manager stores the interaction  
 
 ---
 
@@ -190,57 +189,48 @@ Multimodal-Math-Mentor
 
 While the system provides flexibility and transparency, several trade-offs exist:
 
-Multi-agent systems may introduce **slightly higher latency** compared to single-model solutions.
+* Multi-agent systems may introduce **slightly higher latency** compared to single-model solutions  
+* OCR accuracy can depend on **image quality and handwriting clarity**  
+* Speech recognition may introduce **transcription errors** in noisy environments  
+* Retrieval-based reasoning depends on the **quality of indexed knowledge sources**  
 
-OCR accuracy can depend on **image quality and handwriting clarity**.
+These design decisions balance:
 
-Speech recognition may introduce **transcription errors** in noisy environments.
-
-Retrieval-based reasoning depends on the **quality of indexed knowledge sources**.
-
-These design decisions balance **accuracy, interpretability, and usability**.
+* Accuracy  
+* Interpretability  
+* Reliability  
+* Usability  
 
 ---
 
 # Key Achievements
 
-Designed a **multi-agent reasoning architecture** for mathematical problem solving.
-
-Implemented a **multimodal input pipeline** supporting text, image, and audio.
-
-Integrated **OCR and speech-to-text technologies**.
-
-Developed **Retrieval-Augmented Generation** for contextual reasoning.
-
-Added a **solution verification stage** to improve reliability.
-
-Built a **fully functional interactive web application using Streamlit**.
-
-Successfully **deployed the application for real-time usage**.
+* Designed a **multi-agent reasoning architecture** for mathematical problem solving  
+* Implemented a **multimodal input pipeline** supporting text, image, and audio  
+* Integrated **OCR and speech-to-text technologies**  
+* Developed **Retrieval-Augmented Generation (RAG)** for contextual reasoning  
+* Added a **solution verification stage** to improve reliability  
+* Built a **fully functional interactive web application using Streamlit**  
+* Successfully **deployed the application for real-time usage**  
 
 ---
 
 # Future Improvements
 
-Improve OCR accuracy for handwritten equations.
-
-Add graph visualization for functions and equations.
-
-Extend support for advanced symbolic mathematics.
-
-Improve reasoning performance for complex multi-step problems.
-
-Expand knowledge retrieval sources.
+* Improve OCR accuracy for handwritten equations  
+* Add graph visualization for functions and equations  
+* Extend support for advanced symbolic mathematics  
+* Improve reasoning performance for complex multi-step problems  
+* Expand knowledge retrieval sources  
 
 ---
 
 # Author
 
-Karthik
+Chandini
 
 ---
 
 # License
 
 This project is open-source and available under the MIT License.
-
